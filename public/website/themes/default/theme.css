@@ -86,7 +86,7 @@ button, .button  {
     width: 100%;
 }
 #gravy > div {
-    position: absolute;
+    position: relative;
     background-color: #fff;
     width: 60%;
     box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
@@ -94,6 +94,7 @@ button, .button  {
     border: 10px solid var(--button-border-colour);
     font-family: 'subheading', Helvetica, sans-serif;
     font-size: 36pt;
+    z-index: 100;
 }
 #gravy > div p {
     padding: 20px 50px;
@@ -121,8 +122,10 @@ button, .button  {
     height: 50px;
 }
 #gravy .img {
-    margin-top: 100px;
+    position: relative;
+    margin-top: -100px;
     width: 100%;
+    z-index: 99;
 }
 .form-input {
     margin-bottom: 20px;

@@ -56,6 +56,7 @@ require_once("./website/header.php");
                         <button type="submit" name="send">send it</button>
                     </div>
                 </form>
+                <div id="comment"></div>
             </div>
             <img class="img" src="/website/assets/<?= $background; ?>.jpg?t=1">
         </div>
