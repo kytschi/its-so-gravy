@@ -63,6 +63,12 @@ button, .button  {
 #background-pour button, #background-pour .button  {
     background-color: #EA7552 !important;
 }
+#background-page {
+    background-color: #25B5B6;
+}
+#background-page button, #background-page .button  {
+    background-color: #C5C974 !important;
+}
 
 #gravy {
     float: left;
