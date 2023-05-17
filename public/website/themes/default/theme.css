@@ -234,10 +234,11 @@ footer .button {
 
 #tiles {
     column-gap: 40px;
+    margin-bottom: 50px;
 }
 
 .tile {
-    display: inline-block;
+    display:block;
     break-inside: avoid-column;
     font-family: 'subheading', Helvetica, sans-serif;
     margin: 0 0 40px 0;
