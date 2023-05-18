@@ -71,14 +71,22 @@ button, .button  {
 }
 #background-gravys {
     background-color: #5B6A89;
-}
-#background-gravys {
     background-image: url("/website/assets/background-gravys.jpg");
     background-repeat: no-repeat;
     background-position: top center;
 }
 #background-gravys button, #background-gravys .button  {
     background-color: #CE0700 !important;
+}
+
+#background-sitemap {
+    background-color: #5E8AB7;
+    background-image: url("/website/assets/background-sitemap.jpg");
+    background-repeat: no-repeat;
+    background-position: top 200px center;
+}
+#background-sitemap button, #background-sitemap .button  {
+    background-color: #E28798 !important;
 }
 
 #gravy {
