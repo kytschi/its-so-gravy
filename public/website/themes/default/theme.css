@@ -257,6 +257,7 @@ footer .button {
 }
 
 .tile {
+    display: block;
     break-inside: avoid-column;
     font-family: 'subheading', Helvetica, sans-serif;
     padding: 0 40px 40px 40px;
@@ -264,6 +265,10 @@ footer .button {
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     border: 8px solid var(--button-border-colour);
     background-color: #fff;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+}
+
+@-moz-document url-prefix() {
+    .tile {
+        display: inline-block;
+    }
 }
