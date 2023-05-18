@@ -1,5 +1,6 @@
 <?php
 $pages = $DUMBDOG->pages();
+$comments = $DUMBDOG->comments();
 require_once("./website/header.php");
 ?>
 <body id="background-sitemap">
@@ -12,6 +13,11 @@ require_once("./website/header.php");
             }
             ?>
             <p><a href="<?= $page->url;?>" class="button"><?= strtolower($page->name); ?></a></p>
+            <?php
+        }
+        foreach ($comments as $comment) {
+            ?>
+            <p><a href="/?gravy=<?= $comment->id;?>" class="button"><?= strtolower($comment->content); ?></a></p>
             <?php
         }
         ?>
