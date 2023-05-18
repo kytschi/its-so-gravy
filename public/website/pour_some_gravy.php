@@ -3,7 +3,7 @@ $status = true;
 try {
     if (isset($_POST['send'])) {   
         if (empty($_POST['content'])) {
-            throw new \Exception('Missing required fields');
+            throw new \Exception('Make sure to fill both boxes in!');
         }
 
         if (!$DUMBDOG->captcha->validate()) {
@@ -47,7 +47,7 @@ require_once("./website/header.php");
             <div>
                 <form method="post">
                     <div class="form-input">
-                        <textarea name="content" rows="5" placeholder="enter your gravy moment here"></textarea>
+                        <textarea name="content" maxlength="160" rows="5" placeholder="enter your gravy moment here"></textarea>
                     </div>
                     <div class="form-input">
                         <?= $DUMBDOG->captcha->draw(); ?>
